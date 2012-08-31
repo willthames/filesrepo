@@ -1,13 +1,10 @@
-<html>
-<head>
-<title>Files repository</title>
-<link rel='stylesheet' href='/static/filesrepo.css'>
-</head>
-<body>
-<h1>Repositories</h1>
+{% extends "base.html" %}
+{% block title %}Files repository{% endblock %}
+{% block heading %}Repositories{% endblock %}
+{% block content %}
 <ul>
 {% for repo in repos.keys() %}
 <li><a href="{{ url_for('repo', reponame=repo) }}">{{ repo }}</a></li>
 {% endfor %}
 </ul>
-</body>
+{% endblock %}
