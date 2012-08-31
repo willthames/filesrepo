@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>Files repository</title>
+<link rel='stylesheet' href='/static/filesrepo.css'>
+</head>
+<body>
+<h1>Repositories</h1>
+<ul>
+{% for repo in repos %}
+<li>{{ repo }}</li>
+{% endfor %}
+</ul>
+</body>
