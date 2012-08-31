@@ -7,7 +7,7 @@
 <h1>Repositories</h1>
 <ul>
 {% for repo in repos %}
-<li>{{ repo }}</li>
+<li><a href="{{ url_for('repo', reponame=repo['name'])}}">{{ repo['name'] }}</a></li>
 {% endfor %}
 </ul>
 </body>
